@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scrollspy navigation and smooth scrolling</title>
+  <link href="assets/images/favicon.ico" rel="shortcut icon">
+  <!-- link all the styles -->
+  <link rel="stylesheet" href="bower_components/uikit/css/uikit.min.css" />
+  <!-- link all the scripts -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/uikit/js/uikit.min.js"></script>
+  <script src="bower_components/uikit/js/components/sticky.min.js"></script>
+</head>
+
+<body>
+  <div class="uk-container uk-container-center uk-margin-top">
+    <!-- navigation -->
+    <nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top: -100, animation: 'uk-animation-slide-top'}">
+      <a href="#" class="uk-navbar-brand">The Age of Space</a>
+      <ul class="uk-navbar-nav" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: {offset: 50}}">
+        <li><a href="#dream">The dream</a></li>
+        <li><a href="#launch">The launch</a></li>
+        <li><a href="#mars">Life on Mars</a></li>
+      </ul>
+    </nav>
+
+    <!-- content -->
+    <h1 class="uk-text-center" id="dream">The Dream</h1>
+    <img src="http://placehold.it/1200x800" width="1200" height="800" alt="Night sky" />
+    <hr class="uk-grid-divider">
+    <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
+      <div>
+        <img src="http://placehold.it/600x400" width="600" height="400" alt="" />
+      </div>
+      <div>
+        <h2>Reaching for the Starts</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+    <hr class="uk-grid-divider">
+    <h1 class="uk-text-center" id="launch">The Launch</h1>
+    <div class="uk-margin">
+      <img src="http://placehold.it/1200x800" width="1200" height="800" alt="Space shuttle" />
+    </div>
+    <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
+      <div>
+        <h2>Plenty of Challenges ahead</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div>
+        <img src="http://placehold.it/660x400" width="660" height="400" alt="" />
+      </div>
+    </div>
+    <hr class="uk-grid-divider">
+
+    <h1 class="uk-text-center" id="mars">Life on Mars</h1>
+    <div class="uk-margin">
+      <img src="http://placehold.it/1200x800" width="1200" height="800" alt="SpaceX Falcon 9 launch" />
+    </div>
+
+    <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
+      <div>
+        <img src="http://placehold.it/660x400" width="660" height="400" alt="" />
+      </div>
+      <div>
+        <h2>The critical touchdown</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+    <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
+      <div>
+        <h2>A Colony of Humans</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div>
+        <img src="http://placehold.it/600x400" width="600" height="400" alt="" />
+      </div>
+    </div>
+    <footer class="uk-text-center uk-margin-large">
+      <a href="#" data-uk-smooth-scroll>To Top</a>
+    </footer>
+  </div>
+</body>
+
+</html>

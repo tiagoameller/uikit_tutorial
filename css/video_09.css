@@ -1,0 +1,30 @@
+.header {
+  background-image: url(http://placehold.it/1200x800/000000);
+  background-size: cover;
+}
+
+.header-inner {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 300px 10px 50px;
+}
+
+.header h1 {
+  font-size: 60px;
+  letter-spacing: -2px;
+  font-weight: 900;
+  color: white;
+}
+.header h2 {
+  font-weight: lighter;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+@media screen and (max-width: 480px) {
+  .header-inner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 100px 10px;
+  }
+}
